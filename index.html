@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igor-drak</title>
+    <style>
+        body{
+            background-color: rgb(87, 15, 255); /* Vermelho */
+      color: rgb(0, 0, 0);  } 
+    </style>
+</head>
+<body>
+    <h1>igor lindo</h1><h2>alerta de mensagem</h2>
+    <p style="text-align:center">
+        <button onclick="alerta()"
+         style= ""> 😴alerta!😴</button>
+        </p>
+        <h2> Altere a cor do fundo do site clicando em uma das cores abaixo </h2>
+        <p style="text-align: center">
+            <button onclick="blue()">azul </button>
+            <button onclick="red()">vermelho </button>
+            <button onclick="green()"> verde </button>
+            </p>
+</body>
+<script>
+
+function blue() {
+document.getElementsByTagName("body")[0].style.background = "#00f"
+}
+function green() {
+document.getElementsByTagName("body")[0].style.background = "#0f0"
+}
+function red() {
+document.getElementsByTagName("body")[0].style.background = "#f00"
+}
+
+
+
+
+    console.log("ola mundo")
+
+    function alerta(){
+        var nome = prompt("ola, informe seu nome:");
+        alert(`ola 
+        ${nome}!`);
+    }
+  
+</script>
+<!-- <p>document.getElementsByTagName("body")[0].style.background = "#f2864b"</p> -->
